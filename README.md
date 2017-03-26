@@ -20,6 +20,7 @@ TASK TO BE COMPLETED
     - commands (Add, Edit, Delete)
   - Scheduling
     - timetable
+    - Fetch data from database and format it for HTML
   - Student View
     - Shopping Cart
     - Enrolling
