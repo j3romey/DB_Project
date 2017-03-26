@@ -5,7 +5,11 @@ DATABASE FOLDER
   - DATABASE NAME MUST BE CALLED "test"
   - Then import the most current .sql file in the database folder
   - *Always make sure you are importing the current database*
-  
+
+HTDOCS
+  - initialize git in the htdocs folder or 
+  - Add the rest of the files to the htdocs folders in MAMP
+
  TABLES THAT CONTAIN DATA
   - Course
   - Department
