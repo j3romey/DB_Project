@@ -3,7 +3,7 @@
 <head>
 <title>University of Calgary Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="/css/index.css">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
@@ -11,7 +11,7 @@
 <body>
     
     
-     <img id = "logo" src=logo.png>
+     <img id = "logo" src=/images/logo.png>
 
 
     <form>
@@ -21,7 +21,7 @@
         <input type="text" name="username" placeholder="Username"><br>
         <input type="text" name="password" placeholder="Password"><br>
         <button type="button">Sign In</button>
-
+        <a href="/phpMyAdmin/?lang=en">Sign Up?</a>
     </form>
    
 
