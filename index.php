@@ -20,7 +20,7 @@
         <input type="text" name="password" placeholder="Password" required><br>
         <button type="submit">Sign In</button>
         <a href="/pages/sign_up.php">Sign Up?</a>
-        <a href="#">Guest</a>
+        <a href="guest.php">Guest</a>
         <? echo $response ?>
     </form>
 
