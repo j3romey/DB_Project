@@ -14,6 +14,25 @@
 
 <body>
 <select>
+    
+    <?
+        $path = $_SERVER['DOCUMENT_ROOT'];
+        $path .= "/php/db_login.php";
+        include_once($path);    
+
+        $sql = "SELECT DISTINCT Acronym from course"; 
+
+        $result = mysqli_query($conn, $sql);    
+
+        while($row = $result->fetch_assoc()){
+            //echo $row['Number'] . "<BR>";
+            echo "<option value=" . $row['Acronym'] . ">" . $row['Acronym'] . "</option>";
+        }   
+
+    ?>
+</select>
+
+<select>
     <?
     $path = $_SERVER['DOCUMENT_ROOT'];
     $path .= "/php/db_login.php";
