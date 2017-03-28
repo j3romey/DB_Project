@@ -10,11 +10,9 @@
 </head>
 <body>
     
-    
      <img id = "logo" src="/logo.png">
 
      <h1>WELCOME STUDENT</h1>
    
-
 </body>
 </html>
