@@ -16,6 +16,10 @@ HTDOCS
   - Department
   - User (root, root)
   - Reigstrar
+  - Instructors
+  - Sections
+  - Lecture
+  - Tutorials
   
 Project Status
   - Sign Up fully works
