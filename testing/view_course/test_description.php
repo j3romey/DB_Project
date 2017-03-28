@@ -3,15 +3,19 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 $path .= "/php/db_login.php";
 include_once($path);
 
+session_start();
+
 if($_POST['id']){
+
+    $Acronym = $_SESSION['Acronym'];
+
     $id=$_POST['id'];
-    $sql = "SELECT Number from course WHERE Acronym = '$id' "; 
+    $sql = "SELECT Description from course WHERE Acronym = '$Acronym' AND Number = '$id' "; 
 
     $result = mysqli_query($conn, $sql);    
-    
+
     while($row = $result->fetch_assoc()){
-        echo $row['Number'] . "<BR>";
-        echo "<option value=" . $row['Number'] . ">" . $row['Number'] . "</option>";
+        echo $row['Description'];
     }   
 }
 ?>
