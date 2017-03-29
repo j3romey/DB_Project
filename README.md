@@ -1,5 +1,5 @@
 # DB_Project
-CPSC 471
+*FEEL FREE TO UPDATE THIS IF ANYTHING IS MISSING*
 
 DATABASE SETUP
   - DATABASE NAME MUST BE CALLED "test" in phpmyadmin
@@ -27,7 +27,9 @@ HTDOCS
   - Major
   
 Project Status
-  - Sign Up fully works
+  - Sign Up Fully Works
+  - Guest Side is Completed (Jerome)
+  	- Please check over to make sure I didn't miss anything
   
 TASK TO BE COMPLETED
   - Admin Access
@@ -45,3 +47,6 @@ TROUBLESHOOTING
         $path = $_SERVER['DOCUMENT_ROOT'];  <br>
         $path .= "/yourpath/yourfile.php";  <br>
         include_once($path);  <br>
+  - Make sure you have the proper files linked when doing javascript, php, css, etc.
+  - Make sure you are referring to the proper path (ex: making sure a file is in the proper folder)
+ 
