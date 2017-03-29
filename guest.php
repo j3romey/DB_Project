@@ -21,12 +21,12 @@
     <div class="w3-rest	">
         <div class = "w3-half">
             <div class = "w3-card-4 select">
-                <p> Degrees </p>
+                <a href="/pages/guest/show_degree.php"> DEGREES </a>
             </div>
         </div>
         <div class = "w3-half">
             <div class = "w3-card-4 select">
-                <p> Courses </p>
+                <a href="/pages/guest/courses.php"> COURSES </a>
             </div>
         </div>
     </div>
