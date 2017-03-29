@@ -20,6 +20,11 @@ HTDOCS
   - Sections
   - Lecture
   - Tutorials
+  - Lab
+  - Degree (1 only so far)
+	- Courses with the same GroupBy means you only need to take 1 of them
+	- Student must finish all GroupBy to graduate on that degree
+  - Major
   
 Project Status
   - Sign Up fully works
