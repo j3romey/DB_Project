@@ -11,38 +11,33 @@ HTDOCS
   - initialize git in the htdocs folder or
   - Add the rest of the files to the htdocs folders in MAMP
 
- TABLES THAT CONTAIN DATA
-  - Course
-  - Department
-  - User (root, root)
-  - Reigstrar
-  - Instructors
-  - Sections
-  - Lecture
-  - Tutorials
-  - Lab
-  - Degree (1 only so far)
-	- Courses with the same GroupBy means you only need to take 1 of them
-	- Student must finish all GroupBy to graduate on that degree
-  - Major
-  
-Project Status
+DATABASE
+   - MAKE SURE THERE ARE 'ROWS' IN THE TABLE WHEN TESTING
+
+# PROJECT STATUS
+
+TASKS COMPLETED
   - Sign Up Fully Works
-  - Guest Side is Completed (Jerome)
-  	- Please check over to make sure I didn't miss anything
-  
+  - Guest Side
+  	- View Courses
+	- View Degrees
+  - Student
+  	- View Degree
+	
 TASK TO BE COMPLETED
   - Admin Access
     - commands (Add, Edit, Delete)
-  - Scheduling
-    - timetable
-    - Fetch data from database and format it for HTML
+    	- Instructors
+	- Courses
+
   - Student View
     - Shopping Cart
     - Enrolling
-    - Current Schedule
+    - View Schedule
+    - Edit profile?
+    	- password and stuff
     
-TROUBLESHOOTING
+# TROUBLESHOOTING
   - when 'including' a php file please use the follwing code to use the absolute path <br>
         $path = $_SERVER['DOCUMENT_ROOT'];  <br>
         $path .= "/yourpath/yourfile.php";  <br>
