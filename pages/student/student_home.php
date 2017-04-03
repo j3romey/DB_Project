@@ -7,12 +7,15 @@
 
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+<!-- CHANGE CSS SOURCE LATER-->
+<link href="/testing/test.css" rel="stylesheet">
+
 </head>
 <body>
-    
-     <img id = "logo" src="/logo.png">
+    <!-- $page is the type of page to set 'active' in the navbar (student_nav.php)-->
+    <?php $page = 'home'; include("student_nav.php");?>
 
-     <h1>WELCOME STUDENT</h1>
-   
+    <br>
+    <h1> HOME PAGE </h1>
 </body>
 </html>
