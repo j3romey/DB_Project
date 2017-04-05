@@ -11,8 +11,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Dumping database structure for test2
-CREATE DATABASE IF NOT EXISTS `test2` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `test2`;
+CREATE DATABASE IF NOT EXISTS `test` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `test`;
 
 
 -- Dumping structure for table test2.course
