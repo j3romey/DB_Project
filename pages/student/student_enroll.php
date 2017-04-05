@@ -3,12 +3,14 @@
 <head>
 <title>University of Calgary Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="index.css">
 
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="student_enroll.js"></script>
 
 <!-- CHANGE CSS SOURCE LATER-->
 <link href="/testing/test.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -33,21 +35,14 @@
     </select> <br><br>
 
     <select class="number">
-    <option selected="selected">--Select Course--</option>
-        <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/php/db_login.php";
-            include_once($path);
-
-            $sql = "SELECT Number from course"; 
-
-            $result = mysqli_query($conn, $sql);
-
-            while($row = $result->fetch_assoc()){
-                echo "<option value=" . $row['Number'] . ">" . $row['Number'] . "</option>";
-            }   
-        ?>
+        <option selected="selected">--Select Course--</option>
     </select> <br><br>
+
+    <form method="post" class="sections" action="test.php">
+        <input type="radio" name="gender" value="male"> Sections<br>
+        <input type="radio" name="gender" value="female"> Go <br>
+        <input type="radio" name="gender" value="other"> Here
+    </form>
 
 
 </body>
