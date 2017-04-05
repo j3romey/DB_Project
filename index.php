@@ -21,6 +21,7 @@
         <button type="submit">Sign In</button>
         <a href="/pages/sign_up.php">Sign Up?</a>
         <a href="guest.php">Guest</a>
+        <a href="admin.php">Admin</a>
         <? echo $response ?>
     </form>
 
