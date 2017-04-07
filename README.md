@@ -23,6 +23,7 @@ TASKS COMPLETED
 	- View Degrees
   - Student
   	- View Degree
+	- Shopping Cart (Adding and Viewing)
 	
 TASK TO BE COMPLETED
   - Admin Access
@@ -31,17 +32,23 @@ TASK TO BE COMPLETED
 	- Courses
 
   - Student View
-    - Shopping Cart
     - Enrolling
     - View Schedule
     - Edit profile?
     	- password and stuff
     
 # TROUBLESHOOTING
-  - when 'including' a php file please use the follwing code to use the absolute path <br>
+  - when 'including' a php file please use the follwing code to use the absolute path: <br>
         $path = $_SERVER['DOCUMENT_ROOT'];  <br>
         $path .= "/yourpath/yourfile.php";  <br>
         include_once($path);  <br>
+  - Use the Following code to connect to the database in PHP:<br>
+  	$path = $_SERVER['DOCUMENT_ROOT'];<br>
+    	$path .= "/php/db_login.php";<br>
+    	include_once($path);<br>
+  - Put this line in the top of the php to view errors: <br>
+    ex: student_add_shopping_cart.php <br>
+    error_reporting(E_ALL); ini_set('display_errors', 'On'); 
   - Make sure you have the proper files linked when doing javascript, php, css, etc.
   - Make sure you are referring to the proper path (ex: making sure a file is in the proper folder)
  
