@@ -20,7 +20,7 @@
 
         // GET lecture
         echo "<h1>LECTURES</h1>";
-        $sql = "SELECT * FROM (SELECT * from section WHERE section.Cid = '$CID') section JOIN lecture ON section.Sid = lecture.Sid ";
+        $sql = "SELECT * FROM (SELECT * from section WHERE section.Cid = '$CID') section JOIN lecture ON section.Sid = lecture.Sid ORDER BY Room";
         $result = mysqli_query($conn, $sql);   
         while($row = $result->fetch_assoc()){
             $ROOM = $row['Room'];
@@ -33,7 +33,7 @@
 
         // GET tutorial
         echo "<h1>TUTORIALS</h1>";
-        $sql = "SELECT * FROM (SELECT * from section WHERE section.Cid = '$CID') section JOIN tutorial ON section.Sid = tutorial.Sid ";
+        $sql = "SELECT * FROM (SELECT * from section WHERE section.Cid = '$CID') section JOIN tutorial ON section.Sid = tutorial.Sid ORDER BY Room";
         $result = mysqli_query($conn, $sql);   
         while($row = $result->fetch_assoc()){
             $ROOM = $row['Room'];
@@ -46,7 +46,7 @@
 
         // GET tutorial
         echo "<h1>LABS</h1>";
-        $sql = "SELECT * FROM (SELECT * from section WHERE section.Cid = '$CID') section JOIN lab ON section.Sid = lab.Sid ";
+        $sql = "SELECT * FROM (SELECT * from section WHERE section.Cid = '$CID') section JOIN lab ON section.Sid = lab.Sid ORDER BY Room";
         $result = mysqli_query($conn, $sql);   
         while($row = $result->fetch_assoc()){
             $ROOM = $row['Room'];

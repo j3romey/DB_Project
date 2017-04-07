@@ -14,7 +14,7 @@
      <img id = "logo" src=/images/logo.png>
 
 
-    <form>
+    <form class = "login">
         <div id="login-title">
             <h1> Registrar Login</h1>
         </div>
