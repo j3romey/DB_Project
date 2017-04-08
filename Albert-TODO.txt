@@ -1,0 +1,20 @@
+TODO:
+ - Connect the Admin pages to the database
+ - SQL commands to pull data from SQL Database into site
+ 
+admin_add.php:
+ - Dropdown menu to select section type (lecture, lab, tutorial, etc)
+ - Text boxes to fill in course abbreviation, number, time, etc. (Copy textbox code from login page)
+ 
+admin_del.php:
+ - Dropdown menus to select course (Copy code from guest course viewing page)
+
+admin_mod.php:
+ - Dropdown menus to select course (Copy code from guest course viewing page)
+ - Text boxes that are filled with information from selected class, then allow editing then submit
+
+admin_home.php:
+ - Page should be complete, maybe add some more information to the blank page because it's just links to the other pages
+
+admin_nav.php:
+ - Navigation buttons for the other pages, if any new pages are added, put them in here to link them
