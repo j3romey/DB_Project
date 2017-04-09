@@ -18,8 +18,8 @@
     <br>
     <h1> ADD COURSES </h1>
 
-    <form method="post" action="/php/register.php">
-        <select class="courses">
+    <form method="post" action="action/class_add.php">
+        <select name="department">
             <option selected="selected">--Select Department--</option>
             <?php
                 $path = $_SERVER['DOCUMENT_ROOT'];
