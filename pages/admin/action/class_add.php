@@ -15,5 +15,8 @@ $sql = "INSERT INTO course (Acronym, Number, Name, Description)
         
 $result = mysqli_query($conn, $sql);
 
-header("Location: /pages/admin/admin_add.php")
+echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Succesfully Added the course')
+    window.location.href='/pages/admin/admin_add.php';
+    </SCRIPT>");
 ?>
