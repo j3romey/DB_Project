@@ -1,20 +1,30 @@
-TODO:
- - Connect the Admin pages to the database
- - SQL commands to pull data from SQL Database into site
+GENERAL TODO:
+    - Connect the Admin pages to the database
+    - Various CSS and layout changes
+
+Add courses (admin_add.php):
+    TODO:
+        - SQL commands to pull data from SQL Database into site
+    COMPLETED:
+        - Dropdown menu to select section type (lecture, lab, tutorial, etc)
+        - Text boxes to fill in course abbreviation, number, time, etc. (Copy textbox code from login page)
  
-admin_add.php:
- - Dropdown menu to select section type (lecture, lab, tutorial, etc)
- - Text boxes to fill in course abbreviation, number, time, etc. (Copy textbox code from login page)
- 
-admin_del.php:
- - Dropdown menus to select course (Copy code from guest course viewing page)
+Delete Courses (admin_del.php):
+    TODO:
+        - implement the delete inside of action/class_delete.php (currently just copied the code from student_add_shopping_cart.php as functionality is similar)
+    COMPLETED:
+        - Selection of course to delete (Modified the select code from sudent_enroll.php)
 
-admin_mod.php:
- - Dropdown menus to select course (Copy code from guest course viewing page)
- - Text boxes that are filled with information from selected class, then allow editing then submit
+Modify Courses (admin_mod.php):
+    TODO:
+        - Implement course modification, on select course display input boxes with the course information so that it can be changed
+    COMPLETED:
+        - Selection of course to modify
 
-admin_home.php:
- - Page should be complete, maybe add some more information to the blank page because it's just links to the other pages
+Admin Homepage (admin_home.php):
+    COMPLETED:
+        - Page should be complete, maybe add some more information to the blank page because it's just links to the other pages
 
-admin_nav.php:
- - Navigation buttons for the other pages, if any new pages are added, put them in here to link them
+Admin Navigation (admin_nav.php):
+    COMPLETED:
+        - Navigation buttons for the other pages, if any new pages are added, put them in here to link them

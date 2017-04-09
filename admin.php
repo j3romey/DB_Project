@@ -19,6 +19,8 @@
         <input type="text" name="username" placeholder="Username" required><br>
         <input type="text" name="password" placeholder="Password" required><br>
         <button type="submit">Sign In</button>
+        <a href="guest.php">Guest</a>
+        <a href="index.php">Student</a>
         <? echo $response ?>
     </form>
    
