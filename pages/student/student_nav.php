@@ -16,7 +16,7 @@
                href="student_degree.php">Degree</a></li>
    <li>
        <a <?php echo ($page == 'schedule') ? "class='active'" : ""; ?> 
-               href="#">Schedule</a></li>
+               href="student_schedule.php">Schedule</a></li>
    <li>
        <a <?php echo ($page == 'enroll') ? "class='active'" : ""; ?> 
                href="student_enroll.php">Enroll</a></li>

@@ -67,7 +67,8 @@
                     $SID = $row['SID'];
                     echo "<input type='checkbox' name='check_list[]' value = '$SID'>" .$row['Acronym'] . " " . $row['Number'] . " " . $row['Room'] . " " . $row['Time'] . "<br>";
                 }   
-                echo "<input type='submit' value='Submit'>";
+                echo "<button type='submit' name='action' value='enroll'>Enroll</button>";
+                echo "<button type='submit' name='action' value='delete'>Delete</button><BR>";
 
                 
             ?>
