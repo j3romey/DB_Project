@@ -37,6 +37,10 @@
 
         }
     }else{
-        
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('Wrong Username/Password')
+        window.location.href='/admin.php';
+        </SCRIPT>");
+        exit();
     }
 ?>

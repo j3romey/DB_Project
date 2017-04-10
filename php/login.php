@@ -35,6 +35,10 @@
 
         header("Location: /pages/student/student_home.php");
     }else{
-        
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('Wrong Username/Password')
+        window.location.href='/index.php';
+        </SCRIPT>");
+        exit();
     }
 ?>
