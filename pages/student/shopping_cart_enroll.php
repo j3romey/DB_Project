@@ -31,6 +31,7 @@ if($_POST['action'] == 'enroll'){
         window.alert('Succesfully Enrolled')
         window.location.href='/pages/student/student_enroll.php';
         </SCRIPT>");
+        exit();
     }
 
 }else if($_POST['action'] == 'delete'){
@@ -47,9 +48,14 @@ if($_POST['action'] == 'enroll'){
         window.alert('Succesfully Deleted')
         window.location.href='/pages/student/student_enroll.php';
         </SCRIPT>");
+        exit();
     }
-
 }
 
+echo 'derp';
+echo ("<SCRIPT LANGUAGE='JavaScript'>
+window.alert('Something went Wrong')
+window.location.href='/pages/student/student_enroll.php';
+</SCRIPT>");
 
 ?>
