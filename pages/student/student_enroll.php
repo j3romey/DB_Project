@@ -46,9 +46,8 @@
     <div class = "half">
         <h3> SHOPPING CART</h3>
 
-        <ul>
+        <form method="POST" class="shopping_cart" action="shopping_cart_enroll.php">
             <?php
-
                 $path = $_SERVER['DOCUMENT_ROOT'];
                 $path .= "/php/db_login.php";
                 include_once($path);
@@ -65,11 +64,14 @@
                 $result = mysqli_query($conn, $sql); 
 
                 while($row = $result->fetch_assoc()){
-                    echo "<li>" . $row['Acronym'] . " " . $row['Number'] . " " . $row['Room'] . " " . $row['Time'] .  "</li>";
+                    $SID = $row['SID'];
+                    echo "<input type='checkbox' name='check_list[]' value = '$SID'>" .$row['Acronym'] . " " . $row['Number'] . " " . $row['Room'] . " " . $row['Time'] . "<br>";
                 }   
+                echo "<input type='submit' value='Submit'>";
 
+                
             ?>
-        </ul>    
+        </form> 
     </div>
     
 
