@@ -16,11 +16,11 @@
                href="student_degree.php">Degree</a></li>
    <li>
        <a <?php echo ($page == 'schedule') ? "class='active'" : ""; ?> 
-               href="student_schedule.php">Schedule</a></li>
+               href="student_schedule.php">View Schedule</a></li>
    <li>
        <a <?php echo ($page == 'enroll') ? "class='active'" : ""; ?> 
-               href="student_enroll.php">Enroll</a></li>
+               href="student_enroll.php">Enroll Course</a></li>
    <li>
        <a <?php echo ($page == 'profile') ? "class='active'" : ""; ?> 
-               href="#">Profile</a></li>
+               href="#">View Course</a></li>
 </ul>
