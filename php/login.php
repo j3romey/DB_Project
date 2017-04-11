@@ -26,11 +26,20 @@
     
         $sql = "SELECT * FROM student WHERE UID = '$user_id' ";
         $result = $conn->query($sql);
-        while($row = $result->fetch_assoc()){
-            $_SESSION['student_f_name'] = $row['Fname'];
-            $_SESSION['student_m_name'] = $row['Mname'];
-            $_SESSION['student_l_name'] = $row['Lname'];
-            $_SESSION['student_id'] = $row['UCID'];
+        if($result->num_rows == 1){
+
+            while($row = $result->fetch_assoc()){
+                $_SESSION['student_f_name'] = $row['Fname'];
+                $_SESSION['student_m_name'] = $row['Mname'];
+                $_SESSION['student_l_name'] = $row['Lname'];
+                $_SESSION['student_id'] = $row['UCID'];
+            }
+        }else{
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+            window.alert('Wrong Username/Password')
+            window.location.href='/index.php';
+            </SCRIPT>");
+            exit();
         }  
 
         header("Location: /pages/student/student_home.php");
