@@ -21,6 +21,6 @@
        <a <?php echo ($page == 'enroll') ? "class='active'" : ""; ?> 
                href="student_enroll.php">Enroll Course</a></li>
    <li>
-       <a <?php echo ($page == 'profile') ? "class='active'" : ""; ?> 
-               href="#">View Course</a></li>
+       <a <?php echo ($page == 'drop') ? "class='active'" : ""; ?> 
+               href="student_drop.php">Drop Course</a></li>
 </ul>
