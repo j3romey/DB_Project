@@ -15,6 +15,9 @@
         <a <?php echo ($page == 'Add Courses') ? "class='active'" : ""; ?> 
             href="admin_add.php">Add Courses</a></li>
     <li>
+        <a <?php echo ($page == 'Add Sections') ? "class='active'" : ""; ?> 
+            href="admin_sect_add.php">Add Sections</a></li>
+    <li>
         <a <?php echo ($page == 'Modify Courses') ? "class='active'" : ""; ?> 
             href="admin_mod.php">Modify Courses</a></li>
     <li>
